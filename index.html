@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/3bc06b7c49.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grid">
+      <div class="modal">
+        <div class="modal-content">
+          <div>
+            <img
+              class="profile-img"
+              src="https://i.ibb.co/5jRWgww/aliomar.jpg"
+            />
+            <p>
+              Ali is a new lawyer who is also new to Red Deer. Born in Calgary,
+              Ali completed a Bachelor`s of Arts in Economics at the University
+              of Calgary in 2016. Ali received an full-ride scholarship to
+              attend law school at Georgia State University-College of Law in
+              Atlanta, Georgia. He spent 4 years in Atlanta where he fought to
+              help Defendants in the overburdened and overbearing American
+              criminal justice system.
+            </p>
+            <p>
+              As an intern with the Georgia State Public Defenders Office, Ali
+              worked in the Complex Felony division. He gained experience
+              defending persons accused of serious felonies, including drug
+              trafficking and murder. Even some cases that received national
+              attention. His greatest contribution, and proudest moment as a
+              lawyer, came when he drafted the legal argument that eventually
+              led to the Georgia Court of Appeals decision expanding
+              constitutional protections against unreasonable searches. He
+              continued to volunteer with the Public Defender`s Office after
+              graduation.
+            </p>
+
+            <p>
+              Ali graduated law school in January 2020 and returned home to
+              Alberta. In August 2020, he successfully completed the required
+              exams for internationally trained lawyers. Ali joined Vesta Law as
+              an articling student in May 2021, and has been fighting for
+              clients across central Alberta. As a lawyer he has successfully
+              helped clients with issues in the realm of family law, criminal
+              law, civil litigation, real estate and wills/estates.
+            </p>
+
+            <p>
+              In his free time Ali enjoys, playing tennis, collecting Pokemon
+              Cards and being overly critical of movies.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="top-grid">
+        <div style="background: rgb(243, 234, 234)">
+          <a href="https://imgbb.com/"
+            ><img
+              style="width: 100px"
+              src="https://i.ibb.co/R7wWbND/AO-3.png"
+              alt="AO-3"
+              border="0"
+          /></a>
+        </div>
+        <div class="buttons">
+          <a class="modal-button"> About</a>
+        </div>
+        <div class="buttons">
+          <a class="modal-button"> Contact</a>
+        </div>
+      </div>
+      <div class="middle-grid">
+        <div class="info">
+          <i class="fa-solid fa-scale-balanced"></i>
+          <h1>
+            We're ready to assist you in resolving any legal issues you may
+            have.
+          </h1>
+          <!--       <div class="action-buttons">
+            <h3><i class="fa fa-phone"></i>Call</h3>
+            <h3><i class="fa fa-envelope"></i> Email</h3>
+          </div> -->
+        </div>
+        <!--     <div class="details">
+          <div> <i class="fa fa-user"></i>
+            <p>Ali Omar, B.A, J.D. </p>
+          </div>
+          <div> <i class="fa fa-envelope"></i> ali@aolaw.ca</div>
+          <div> <i class="fa fa-phone"></i>
+            <p> ‭+1 (587) 731-0382‬</p>
+          </div>
+          <div> <i class="fa fa-location"></i>
+            <p>Blank Street office #1</p>
+          </div>
+        </div> -->
+
+        <div class="action">
+          <h1>Book a Free Consultation</h1>
+          <button>Call</button>
+          <!--       <img src="https://i.ibb.co/T29qRLH/Screenshot-2023-09-29-at-11-42-23-PM.png" /> -->
+        </div>
+      </div>
+      <div class="bottom-grid">
+        <div class="icon-top">
+          <i class="fa-solid fa-scale-balanced"></i>Criminal Defence
+        </div>
+        <div class="icon-top">
+          <i class="fa-solid fa-people-roof"></i>Family Law
+        </div>
+        <div class="icon-top">
+          <i class="fa fa-house-chimney-window"></i>
+          <p>Real Estate</p>
+        </div>
+        <div class="icon-top">
+          <i class="fa-solid fa-book"></i>Wills and Estates
+        </div>
+        <div class="icon-top">
+          <i class="fa-solid fa-handshake-angle"></i>Legal Aid
+        </div>
+      </div>
+    </div>
+    <script>
+      const modalButton = document.querySelector(".modal-button");
+
+      const modal = document.querySelector(".modal");
+
+      modalButton.addEventListener("click", toggle);
+
+      function toggle() {
+        modal.style.display = "flex";
+      }
+
+      function closeWindow(event) {
+        console.log(event.target);
+        console.log(modal);
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+
+      window.addEventListener("click", closeWindow);
+    </script>
+  </body>
+</html>
