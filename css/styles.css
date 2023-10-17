@@ -8,6 +8,33 @@
   --action-button-color: white;
 }
 
+.module {
+  height: 100%;
+  transform: translate3d(0, 200px, 0);
+}
+
+.come-in {
+  /*transform: translateY(100px);*/
+  transform: translate3d(0, 100px, 0);
+  animation: come-in 0.8s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+
+.already-visible {
+  /*transform: translateY(0);*/
+  transform: translate3d(0, 0, 0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .buttons {
   font-size: 20px;
   font-weight: 700;
@@ -32,7 +59,7 @@
 body,
 html {
   width: 100vw;
-  height: 90vh;
+
   background: black;
 }
 
@@ -95,10 +122,13 @@ p {
 
 .bottom-grid {
   width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: var(--gap-size);
 }
+
+
 
 .bottom-grid div {
   background: var(--card-color);
@@ -119,6 +149,12 @@ p {
 .middle-grid {
   display: grid;
   grid-template-columns: 1fr 0.7fr;
+  grid-gap: var(--gap-size);
+}
+
+.left-grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
   grid-gap: var(--gap-size);
 }
 
@@ -153,8 +189,32 @@ p {
   text-align: left;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 64px;
+  font-size: 65px;
   font-weight: 500;
+}
+
+.main-icon {
+  display: flex;
+}
+
+.main-icon i {
+  margin-right: 10px;
+}
+
+.info span {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 65px;
+  font-weight: 500;
+}
+
+.calgary-red {
+  color: rgb(183, 43, 53);
+}
+
+.red-deer-red {
+  color: rgb(176, 61, 39);
 }
 
 .action h1 {
@@ -305,6 +365,11 @@ i {
   display: block;
 }
 
+.top-grid:hover #slide {
+  transition: 1s;
+  left: 0;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 900px) {
   .grid {
@@ -321,22 +386,26 @@ i {
   }
 
   .bottom-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: none;
+    grid-auto-columns: 1fr 1fr;
   }
 
+
   .bottom-grid div {
+    grid-column: 1;
+  }
+
+  .bottom-grid:last-child {
+    grid-column: 1;
+  }
+
+  .left-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-grid div .bottom-grid div {
     min-height: 30px;
   }
 
-  .action h1 {
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -0.01em;
-  }
 
-  .info h1 {
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -0.01em;
-  }
 }
