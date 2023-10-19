@@ -54,6 +54,7 @@
 
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body,
@@ -353,12 +354,17 @@ i {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  padding: 30px;
+  padding: 40px;
   overflow: scroll;
+
 }
 
 .modal-content span {
   cursor: pointer;
+}
+
+.modal-content p {
+  font-size: large;
 }
 
 .modal-close {
@@ -407,5 +413,13 @@ i {
     min-height: 30px;
   }
 
+  .module {
+    height: 100%;
+    transform: none;
+  }
+
+  .modal-content {
+    width: 90vw;
+  }
 
 }
