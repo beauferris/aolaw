@@ -384,7 +384,7 @@ i {
   }
 
   .top-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .middle-grid {
@@ -444,4 +444,7 @@ i {
     background: black;
   }
 
+  .logo {
+    grid-column: 1/3;
+  }
 }
