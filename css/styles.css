@@ -10,7 +10,7 @@
 
 .module {
   height: 100%;
-  transform: translate3d(0, 100px, 0);
+  transform: translate3d(0, 50px, 0);
 }
 
 .come-in {
@@ -413,10 +413,10 @@ i {
     min-height: 30px;
   }
 
-  .module {
+  /* .module {
     height: 100%;
     transform: none;
-  }
+  } */
 
   .modal-content {
     width: 90vw;
