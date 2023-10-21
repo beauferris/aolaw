@@ -413,10 +413,10 @@ i {
     min-height: 30px;
   }
 
-  /* .module {
+  .module {
     height: 100%;
     transform: none;
-  } */
+  }
 
   .modal-content {
     width: 90vw;
