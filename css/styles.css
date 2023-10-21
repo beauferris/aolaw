@@ -422,4 +422,26 @@ i {
     width: 90vw;
   }
 
+  .info span {
+    font-size: 40px;
+  }
+
+  .info h1 {
+    font-size: 40px;
+  }
+
+  .main-icon i {
+    font-size: 34px;
+  }
+
+  .action h1 {
+    font-size: 40px;
+  }
+
+  .grid {
+    height: 100vh;
+
+    background: black;
+  }
+
 }
