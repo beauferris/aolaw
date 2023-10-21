@@ -8,9 +8,13 @@
   --action-button-color: white;
 }
 
+.main-grid {
+  height: 80vh;
+}
+
 .module {
   height: 100%;
-  transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 250px, 0);
 }
 
 .come-in {
@@ -88,6 +92,10 @@ p {
 
 .icon-top i {
   margin-bottom: 10px;
+}
+
+.action i {
+  font-size: 50px;
 }
 
 .action a {
@@ -426,6 +434,10 @@ i {
   }
 
   .main-icon i {
+    font-size: 30px;
+  }
+
+  .action i {
     font-size: 30px;
   }
 
