@@ -8,6 +8,28 @@
   --action-button-color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a {
+  margin-left: 4px;
+  text-decoration: underline;
+  color: white;
+}
+
+.info a {
+  text-decoration: none;
+  color: white;
+
+}
+
 .main-grid {
   height: 80vh;
 }
