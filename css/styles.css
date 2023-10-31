@@ -30,6 +30,8 @@ html {
 
 }
 
+
+
 .main-grid {
   height: 80vh;
 }
@@ -224,6 +226,8 @@ p {
   font-weight: 500;
 }
 
+
+
 .main-icon {
   display: flex;
 }
@@ -318,6 +322,12 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+#contact h1 {
+  align-items: left;
+  justify-content: start;
   text-align: center;
 }
 
