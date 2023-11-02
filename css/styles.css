@@ -262,7 +262,7 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 56px;
-  line-height: 64px;
+
   font-weight: 500;
   letter-spacing: -0.03em;
 }
@@ -432,7 +432,7 @@ i {
   }
 
   .top-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .middle-grid {
@@ -499,7 +499,15 @@ i {
     background: black;
   }
 
-  .logo {
-    grid-column: 1/3;
+  .Contact:last-child {
+    grid-column: 2/4;
+  }
+
+  i {
+    font-size: 30px;
+  }
+
+  .action h1 {
+    padding: 20px;
   }
 }
